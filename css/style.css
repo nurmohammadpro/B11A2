@@ -210,6 +210,31 @@ nav {
   gap: 1rem;
   padding: 1rem 0;
 }
+.spandiv {
+  position: relative;
+  width: 100%;
+}
+.spantext {
+  padding: 1rem 4rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: -2rem;
+  left: calc(100% / 2);
+  border-radius: 2rem;
+}
+.spandiv1 {
+  position: relative;
+  width: 100%;
+}
+.spantext1 {
+  padding: 0.5rem 2rem;
+  font-size: 0.75rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: -1rem;
+  left: calc(100% / 2);
+  border-radius: 2rem;
+}
 .storyLeft,
 .storyRight {
   display: flex;
