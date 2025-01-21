@@ -17,16 +17,12 @@
   box-sizing: border-box;
   font-family: "Quicksand", serif;
 }
-body {
+.navContainer {
   width: 100%;
-  background: linear-gradient(to bottom, #fff 0%, #e8f9ff 50%, #fffdec 100%);
-}
-.container {
-  padding: 0 1rem;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 nav {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,7 +89,12 @@ nav {
   display: none;
 }
 
+.heroContainer {
+  width: 100%;
+}
 .heroSection {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -121,15 +122,23 @@ nav {
   border-radius: 0.5rem;
 }
 
-.curriculum {
+.curriculumContainer {
+  width: 100%;
+  height: auto;
   background: url("../assets/bg.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+.curriculum {
+  max-width: 1280px;
+  margin: 0 auto;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 4rem 0;
 }
 .curriculumHeader h1 {
   font-size: 4rem;
@@ -155,18 +164,42 @@ nav {
   text-decoration: none;
   font-weight: 600;
 }
+.pagination {
+  display: flex;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.leftPagination {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--color-shade-1);
+}
 
+.storyContainer {
+  width: 100%;
+  height: auto;
+  background: url("../assets/bg.png"),
+    linear-gradient(to bottom, #fff 0%, #e8f9ff 50%, #fffdec 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
 .ourStories {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 4rem 0;
   width: 100%;
-  pad: 2rem 0;
-  background: url("../assets/bg.png");
-  background-size: cover;
+  padding: 2rem 0;
 }
 .storyHeader h1 {
   font-size: 4rem;
@@ -304,7 +337,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   nav {
-    border: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
   }
   .brand {
     display: none;
